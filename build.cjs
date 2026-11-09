@@ -1,0 +1,1 @@
+const fs=require('fs');fs.mkdirSync('dist',{recursive:true});for(const f of ['index.html','app.js','style.css'])fs.copyFileSync(f,'dist/'+f);fs.cpSync('node_modules/@mediapipe/hands','dist/vendor/hands',{recursive:true});
