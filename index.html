@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ETHER · 手势粒子实验室</title><link rel="stylesheet" href="style.css"></head><body><canvas id="scene"></canvas><header><a class="brand">✳ ETHER <span>PARTICLE LAB / 001</span></a><div class="live"><i></i> 实时交互引擎</div></header><main><div class="eyebrow">探索无形的引力</div><h1>让灵感，<br>在指尖成形<span>。</span></h1><p>伸出双手，触碰一片属于你的宇宙。<br>以手势驱动数千颗光点，感受每一次微小变化。</p><button id="camera">开启摄像头 <b>↗</b></button><div id="status">鼠标移动也可探索 · 按住鼠标吸引粒子</div></main><aside><div class="paneltitle">视觉控制台 <span>⌘</span></div><label>粒子形态</label><div id="shapes"><button class="active" data-shape="nebula">✧ 星云</button><button data-shape="sphere">◉ 球体</button><button data-shape="ring">◎ 星环</button><button data-shape="helix">〰 螺旋</button></div><label>光谱颜色</label><div id="colors"><button class="swatch active" style="--c:#69edce" data-color="mint" aria-label="薄荷绿"></button><button class="swatch" style="--c:#91a7ff" data-color="violet" aria-label="紫色"></button><button class="swatch" style="--c:#ffbb7c" data-color="amber" aria-label="琥珀色"></button></div><label>粒子密度 <output id="amount">2400</output></label><input id="density" type="range" min="600" max="4000" step="200" value="2400"><label>流动速度 <output id="speedval">1.0×</output></label><input id="speed" type="range" min="0.2" max="2" step="0.1" value="1"><div class="divider"></div><div class="gesture"><span>✋</span><div>张开手掌<small>粒子向外扩散</small></div></div><div class="gesture"><span>✊</span><div>握紧拳头<small>粒子聚拢成形</small></div></div><div class="gesture"><span>👌</span><div>拇指与食指捏合<small>吸引粒子跟随指尖</small></div></div></aside><div id="preview" aria-label="前置摄像头实时画面"><video id="video" autoplay playsinline muted></video><canvas id="tracking"></canvas><span id="gestureLabel">摄像头待开启</span></div><footer><span><i></i> <b id="count">2,400</b> PARTICLES</span><span id="fps">60 FPS</span><button id="capture">↓ 保存画面</button><button id="fullscreen">⛶ 全屏沉浸</button><span class="hint">MOVE YOUR HAND. SHAPE YOUR UNIVERSE.</span></footer><script src="vendor/hands/hands.js"></script><script src="app.js?v=selfhost-1"></script></body></html>
+
+
+
+
+
+
+
+
+
+
